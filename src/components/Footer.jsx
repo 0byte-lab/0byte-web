@@ -1,0 +1,89 @@
+import React from 'react'
+import Logo from './Logo'
+import { Button } from './ui/button';
+import { Icon } from 'lucide-react';
+import { IconBrandDiscord, IconBrandGithub, IconBrandX } from '@tabler/icons-react';
+
+const Footer = () => {
+    const menus = [
+        {
+            title: "Product",
+            items: [
+                { name: "Verifier", link: "/verify" },
+                { name: "SDK", link: "/sdk" },
+                { name: "Docs", link: "/docs" },
+                { name: "Create Drop", link: "/creator" },
+            ]
+        },
+        {
+            title: "Company",
+            items: [
+                { name: "About", link: "/about" },
+                { name: "Contact", link: "/contact" },
+                { name: "Privacy Policy", link: "/privacy" },
+                { name: "Terms of Service", link: "/terms" },
+            ]
+        },
+        {
+            title: "Support",
+            items: [
+                { name: "Help Center", link: "/help" },
+                { name: "FAQ", link: "/faq" },
+                { name: "Feedback", link: "/feedback" },
+            ]
+        }
+    ];
+    const socialLinks = [
+        { name: "Github", link: "", Icon: IconBrandGithub },
+        { name: "X", link: "", Icon: IconBrandX },
+        { name: "Discord", link: "", Icon: IconBrandDiscord },
+    ]
+    return (
+        <footer className='xl:max-w-6xl max-w-7xl mx-4 my-16 xl:mx-auto'>
+            <div className='relative py-8 flex md:flex-row flex-col justify-between'>
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-muted/50 to-transparent pointer-events-none" />
+                <div className='flex flex-col justify-between'>
+                    <div>
+                        <Logo className={"w-fit"} />
+                        <p className='text-muted-foreground px-4 py-2 max-w-xs text-sm'>0byte makes AI content verifiable and tamper-proof using zero-knowledge proofs.</p>
+                    </div>
+                    <p className='text-sm text-muted-foreground px-4 hidden sm:block sm:py-0 py-3'>© Nolabs Tech 2025. All rights reserved.</p>
+                </div>
+                <div className='px-4'>
+                    <div className='flex gap-12'>
+                        {
+                            menus.map((menu, id) => (
+                                <div key={id} className='flex flex-col gap-4 my-8'>
+                                    <h3 className='text-sm font-semibold'>{menu.title}</h3>
+                                    <div className='flex flex-col gap-4'>
+                                        {
+                                            menu.items.map((item, index) => (
+                                                <a key={index} href={item.link} className='text-sm text-muted-foreground hover:text-current transition-all ease-in'>{item.name}</a>
+                                            ))
+                                        }
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <div className='flex items-center lg:justify-end justify-between gap-1'>
+                        <p className='text-sm text-muted-foreground sm:hidden block'>© Nolabs Tech 2025. All rights reserved.</p>
+                        <div className=''>
+                            {
+                                socialLinks.map((item, id) => (
+                                    <a href={item.link} key={id}>
+                                        <Button key={id} variant={"ghost"} className={"cursor-pointer hover:text-current"} size={"icon"}>
+                                            <item.Icon className={"h-5 w-5 text-muted-foreground transition-all ease-in"} />
+                                        </Button>
+                                    </a>
+                                ))
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    )
+}
+
+export default Footer
