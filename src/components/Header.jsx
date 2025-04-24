@@ -23,7 +23,7 @@ const Header = () => {
                         ))
                     }
                 </div>
-                <Button className={"cursor-pointer"} size={"lg"}>Try Now</Button>
+                <Button className={"cursor-pointer"} size={"lg"}>Get Started</Button>
             </div>
         </div>
     )

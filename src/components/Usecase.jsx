@@ -4,6 +4,7 @@ import Title from './Title'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import { useCases } from '@/app/data/useCases'
 import { Button } from './ui/button'
+import { ArrowRight } from 'lucide-react'
 
 const Usecase = () => {
     return (
@@ -12,7 +13,7 @@ const Usecase = () => {
                 <Tag text={"Use Cases"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div>
-                <Title text={"Where 0byte Makes a Difference"} className={"my-8 max-w-4xl mx-auto"} />
+                <Title text={"Trusted by Design. Used Across Domains."} className={"my-8 max-w-4xl mx-auto"} />
                 <div className='grid lg:grid-cols-3 gap-4 py-8'>
                     {useCases.map((item, id) => (
                         <Card key={id} className={"h-[300px]"}>
@@ -24,12 +25,17 @@ const Usecase = () => {
                             </CardContent>
                         </Card>
                     ))}
-                    <Card>
+                    <Card className="h-full">
                         <CardHeader>
-                            <CardTitle>And Many More</CardTitle>
+                            <CardTitle>Endless Possibilities</CardTitle>
                         </CardHeader>
-                        <CardContent>
-                            <Button className={"cursor-pointer"}>Try Now</Button>
+                        <CardContent className="flex flex-col justify-between gap-4 h-full">
+                            <p className="text-muted-foreground">
+                                From agent memory to verifiable memes — if it's AI-generated, we can prove it.
+                            </p>
+                            <div className="mt-auto">
+                                <Button className="cursor-pointer w-fit">Explore Use Cases <ArrowRight /></Button>
+                            </div>
                         </CardContent>
                     </Card>
                 </div>

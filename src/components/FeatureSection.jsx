@@ -11,7 +11,7 @@ const FeatureSection = () => {
                 <Tag text={"Feature"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div className='flex flex-col'>
-                <Title text={"Built for Trust. Engineered for Integrity."} className={"my-8 max-w-4xl mx-auto"} />
+                <Title text={"Trusted by Design. Verified by Default."} className={"my-8 max-w-4xl mx-auto"} />
                 <div className='z-0 my-8'>
                     <BentoGrid className={"lg:grid-rows-3"}>
                         {

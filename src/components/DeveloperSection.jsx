@@ -51,9 +51,9 @@ const DeveloperSection = () => {
                 <Tag text={"For Developers"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div className='w-full'>
-                <Title text={"A Trust Layer You Can Build On"} className={"my-8 max-w-4xl mx-auto"} />
+                <Title text={"Add Verifiability to Your Stack"} className={"my-8 max-w-4xl mx-auto"} />
                 <div className='flex flex-col lg:flex-row justify-between gap-6 py-8'>
-                    <div className='flex flex-col w-full justify-between'>
+                    {/* <div className='flex flex-col w-full justify-between'>
                         <>
                             {features.map((feature, id) => (
                                 <Card className={"h-auto my-3"} key={id}>
@@ -67,14 +67,14 @@ const DeveloperSection = () => {
                             ))}
                             <Button>Read Docs</Button>
                         </>
-                    </div>
-                    <div className='max-w-2xl mx-auto w-fit'>
+                    </div> */}
+                    {/* <div className='max-w-2xl mx-auto w-fit'>
                         <CodeBlock
                             language={"javascript"}
                             filename={"index.js"}
                             code={snippet}
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

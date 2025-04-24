@@ -9,7 +9,7 @@ const HowItWorks = () => {
                 <Tag text={"How it works"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div>
-                <Title text={"From Creation to Verification"} className={"my-8 max-w-4xl mx-auto"} />
+                <Title text={"From Generation to Verification."} className={"my-8 max-w-4xl mx-auto"} />
             </div>
         </div>
     )
