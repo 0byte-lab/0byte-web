@@ -1,12 +1,100 @@
+"use client"
 import Title from '@/components/Title'
 import React from 'react'
+import { Button } from '@/components/ui/button'
+import { IconBrandGithub, IconBrandX, IconLink } from '@tabler/icons-react'
+import Link from 'next/link'
+import { Star } from 'lucide-react'
+import Subtitle from '@/components/Subtitle'
+
 
 const page = () => {
+    const copyUrl = () => {
+        navigator.clipboard.writeText(window.location.href)
+            .then(() => {
+                alert("Copied to clipboard")
+            })
+            .catch((err) => {
+                console.error('Failed to copy: ', err);
+            });
+    }
     return (
         <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
-            <div className='mt-32'>
+            <div className='my-20'>
+                <Title text={"Built for Trust. Designed for Proof."} className={"my-8 max-w-3xl mx-auto"} />
+                <Subtitle text={"SSL for AI Content"} className={"my-8 max-w-3xl px-4 mx-auto text-muted-foreground"} />
+                <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-4">
+                    <p className="text-muted-foreground">
+                        In an era where AI-generated content blurs the line between real and synthetic, trust is at risk. At 0byte, we’re building a cryptographic trust layer to ensure authenticity from the moment content is created. Powered by zero-knowledge proofs (ZK proofs) and anchored to the Solana blockchain, we’re redefining trust in digital media.
+                    </p>
+                    <h2 className='text-xl font-semibold'>The Problem</h2>
+                    <p className="text-muted-foreground mt-4">
+                        AI advancements have unleashed a wave of synthetic media like deepfakes, images, and audio.That’s nearly indistinguishable from reality. This creates a crisis of authenticity: misinformation spreads unchecked, and trust in digital content erodes. Traditional verification methods are too slow, reacting only after damage is done.
+                    </p>
+                    <h2 className='text-xl font-semibold'>Our Solution</h2>
+                    <p className="text-muted-foreground mt-4">
+                        0byte is a cryptographic infrastructure layer that integrates trust into the AI creation process. <br></br> We:
+                    </p>
+                    <ul className='list-disc list-inside text-muted-foreground ml-4'>
+                        <li><span className='font-semibold'>Embed proof of authenticity</span> at the moment media is generated.</li>
+                        <li><span className='font-semibold'>Anchor it on-chain</span> using Solana for tamper-resistant verification.</li>
+                        <li><span className='font-semibold'>Enable universal verification</span> , even if content is reposted, compressed, or screenshotted.</li>
+                    </ul>
+                    <p className="text-muted-foreground mt-4">
+                        Think of us as the SSL for AI media—invisible, verifiable, and built for trust. Unlike reactive solutions, we sign and embed authenticity at the point of creation, stopping manipulation before it starts.
+                    </p>
+                    <h2 className='text-xl font-semibold'>How It Works</h2>
+                    <ol className='list-decimal list-inside text-muted-foreground ml-4'>
+                        <li><span className='font-semibold'>Creation:</span> An AI generates content (e.g., image, video, text).</li>
+                        <li><span className='font-semibold'>Signing:</span> 0byte creates a cryptographic proof using ZK proofs.</li>
+                        <li><span className='font-semibold'>Embedding:</span> The proof is invisibly embedded into the content.</li>
+                        <li><span className='font-semibold'>Anchoring:</span> The proof is recorded on Solana’s blockchain.</li>
+                        <li><span className='font-semibold'>Verification:</span> Anyone can check the proof against the blockchain, ensuring authenticity.</li>
+                    </ol>
+                    <h3 className='font-semibold'>Visual Flow:</h3>
+                    <p className='text-muted-foreground mt-4'>
+                        Need to upload a visual flow diagram here.
+                    </p>
+                    <h2 className='text-xl font-semibold'>Why It Matters</h2>
+                    <ul className='list-disc list-inside text-muted-foreground ml-4'>
+                        <li><span className='font-semibold'>Proactive Trust:</span> Stop fakes before they spread.</li>
+                        <li><span className='font-semibold'>Scalable:</span> Built for the volume of modern media on Solana.</li>
+                        <li><span className='font-semibold'>Private:</span> ZK proofs protect creation details.</li>
+                        <li><span className='font-semibold'>Universal:</span> Verifiable anywhere, in any format.</li>
+                    </ul>
+                    <h2 className='text-xl font-semibold'>Our Vision</h2>
+                    <p className="text-muted-foreground mt-4">
+                        Trust is the backbone of the digital world. Just as SSL secured the internet, 0byte aims to secure AI-generated content—making authenticity a given, not a guess.
+                    </p>
+                    <p className="text-muted-foreground mt-4">
+                        At 0byte, we’re not chasing problems. We’re solving them at the source.
+                    </p>
+                    <hr />
+                </section>
+                <div className="mx-auto flex flex-wrap items-center gap-4 max-w-3xl pb-32">
+                    <Button
+                        className="cursor-pointer"
+                        variant="outline"
+                        size="lg"
+                        onClick={copyUrl}
+                    >
+                        <IconLink />
+                        Copy Link
+                    </Button>
+                    <Link href="https://x.com/0byteHQ" passHref>
+                        <Button className="cursor-pointer" variant="outline" size="lg">
+                            Follow us on <IconBrandX />
+                        </Button>
+                    </Link>
 
-                <Title text={"About"} className={"my-8 max-w-4xl mx-auto"} />
+                    <Link href="https://github.com/0byte-lab" passHref>
+                        <Button className="cursor-pointer" variant="outline" size="lg">
+                            <Star />
+                            Star on GitHub
+                            <IconBrandGithub />
+                        </Button>
+                    </Link>
+                </div>
             </div>
         </div>
     )

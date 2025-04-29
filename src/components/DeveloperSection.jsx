@@ -68,13 +68,13 @@ const DeveloperSection = () => {
                             <Button>Read Docs</Button>
                         </>
                     </div> */}
-                    {/* <div className='max-w-2xl mx-auto w-fit'>
+                    <div className='max-w-2xl mx-auto w-fit'>
                         <CodeBlock
                             language={"javascript"}
                             filename={"index.js"}
                             code={snippet}
                         />
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>

@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "0byte | Verifiable AI Content",
+  title: "0byte | The SSL for AI Generated Content",
   description:
-    "0byte embeds zero-knowledge cryptographic proofs into AI-generated media, making content verifiable, tamper-resistant, and future-proof. Trust what you create.",
+    "0byte is the cryptographic infrastructure layer for AI-generated content. It embeds zero-knowledge proofs into media at creation, making content verifiable, tamper-evident, and anchored on-chain for public auditability.",
 };
 
 export default function RootLayout({ children }) {
@@ -33,6 +34,7 @@ export default function RootLayout({ children }) {
         >
           <Header />
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

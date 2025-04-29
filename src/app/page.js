@@ -16,10 +16,10 @@ export default function Home() {
       <FeatureSection />
       <HowItWorks />
       <Usecase />
-      <DeveloperSection />
+      {/* <DeveloperSection /> */}
       <Outro />
       <Newsletter />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
