@@ -1,9 +1,4 @@
-import Subtitle from '@/components/Subtitle'
 import Title from '@/components/Title'
-import { Button } from '@/components/ui/button'
-import { CodeBlock } from '@/components/ui/code-block'
-import { IconBrandDiscord } from '@tabler/icons-react'
-import Link from 'next/link'
 
 const page = () => {
     return (
