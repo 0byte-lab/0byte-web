@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from './Logo'
-import code from '../../public/assets/code.png'
-import tree from '../../public/assets/tree.png'
 import logo from '../../public/logos/logo-dark.png'
-import media from '../../public/assets/media.png'
 
 const HeroComponent = () => {
     return (

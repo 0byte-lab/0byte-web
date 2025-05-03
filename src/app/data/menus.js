@@ -5,7 +5,7 @@ export const menus = {
         { name: "About", href: "/about" },
         { name: "SDK", href: "/sdk" },
         { name: "Docs", href: "/docs", disabled: true },
-        { name: "Blog", href: "/blog", disabled: true },
+        // { name: "Blog", href: "/blog", disabled: true },
         { name: "Verify", href: "/verify" },
     ],
     footer: [
@@ -22,7 +22,7 @@ export const menus = {
             items: [
                 { name: "About", link: "/about" },
                 { name: "FAQ", link: "/faq" },
-                { name: "Blog", link: "/blog" },
+                // { name: "Blog", link: "/blog" },
             ],
         },
     ],

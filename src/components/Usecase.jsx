@@ -3,6 +3,8 @@ import Tag from './Tag'
 import Title from './Title'
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import { useCases } from '@/app/data/useCases'
+import { UseCaseCard } from './ui/use-case-card'
+import Image from 'next/image'
 
 const Usecase = () => {
     return (
@@ -14,15 +16,22 @@ const Usecase = () => {
                 <Title text={"Trusted by Design. Used Across Domains."} className={"my-8 max-w-4xl mx-auto"} />
                 <div className='grid lg:grid-cols-3 gap-4 py-8'>
                     {useCases.map((item, id) => (
-                        <Card key={id} className={"h-[400px]"}>
-                            <CardContent className={"w-fit h-fit overflow-hidden"}>
-                                <div className=' h-full'>
-                                    {item.Icon && <item.Icon strokeWidth={0.08} className="w-[200px] h-[200px] text-muted-foreground" />}
-                                </div>
+                        <Card key={id} className="lg:h-[500px] p-4 flex flex-col justify-between overflow-hidden">
+                            <CardContent className="relative w-full h-full min-h-[300px] p-0 overflow-hidden">
+                                {item.background && (
+                                    <div className="absolute inset-0">
+                                        {item.background}
+                                    </div>
+                                )}
                             </CardContent>
-                            <CardHeader>
-                                <CardTitle className={"text-xl font-semibold"}>{item.title}</CardTitle>
-                                <p className='text-muted-foreground'>{item.description}</p>
+
+                            <CardHeader className="z-10 bg-background bg-opacity-90 backdrop-blur-sm p-4 mt-auto">
+                                <CardTitle className="text-xl font-semibold mb-1">
+                                    {item.title}
+                                </CardTitle>
+                                <p className="text-muted-foreground leading-snug">
+                                    {item.description}
+                                </p>
                             </CardHeader>
                         </Card>
                     ))}
@@ -39,6 +48,7 @@ const Usecase = () => {
                             </div>
                         </CardContent>
                     </Card> */}
+                    {/* <UseCaseCard /> */}
                 </div>
             </div>
         </div>

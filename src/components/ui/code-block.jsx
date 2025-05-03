@@ -34,7 +34,7 @@ export const CodeBlock = ({
     : highlightLines;
 
   return (
-    (<div className="relative w-full rounded-lg bg-slate-900 p-4 font-mono text-sm">
+    (<div className="relative w-full rounded-lg bg-neutral-900 p-4 font-mono text-sm">
       <div className="flex flex-col gap-2">
         {tabsExist && (
           <div className="flex  overflow-x-auto">
@@ -57,7 +57,7 @@ export const CodeBlock = ({
             <div className="text-xs text-zinc-400">{filename}</div>
             <button
               onClick={copyToClipboard}
-              className="flex items-center gap-1 text-xs text-zinc-400 hover:text-zinc-200 transition-colors font-sans">
+              className="flex items-center gap-1 cursor-pointer text-xs text-zinc-400 hover:text-zinc-200 transition-colors font-sans">
               {copied ? <IconCheck size={14} /> : <IconCopy size={14} />}
             </button>
           </div>

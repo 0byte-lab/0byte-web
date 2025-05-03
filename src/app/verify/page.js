@@ -1,13 +1,9 @@
-import Title from '@/components/Title'
+import VerifyClient from "./VerifyClient";
 
-const page = () => {
-    return (
-        <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
-            <div className='mt-20'>
-                <Title text={"Verify"} className={"my-8 max-w-4xl mx-auto"} />
-            </div>
-        </div>
-    )
+export const metadata = {
+    title: "Verify your AI content | 0byte",
+    description: "Now verify the integrity of your content with 0byte.",
+};
+export default function VerifyPage() {
+    return <VerifyClient />
 }
-
-export default page
