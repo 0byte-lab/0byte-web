@@ -12,8 +12,8 @@ export default function Logo({ className, isLink }) {
                     <Link href={"/"} >
                         <div className='text-black flex items-center text-3xl dark:text-white font-medium tracking-tighter select-none'>
                             <Image src={logoDefault} alt="ZeroByte Logo" className='h-12 w-12 dark:hidden' />
-                            <Image src={logoDark} alt="ZeroByte Logo" className='h-12 w-12 hidden dark:block' />
-                            <span className='ml-[-12px]'>byte</span>
+                            <Image src={logoDark} alt="ZeroByte Logo" className='h-14 w-14 hidden dark:block' />
+                            <span className='ml-[-12px] tracking-tighter font-semibold'>byte</span>
                         </div>
                     </Link>
                     :

@@ -3,6 +3,9 @@ import Logo from './Logo'
 import { Button } from './ui/button';
 import { SparklesCore } from './ui/sparkles';
 import { menus } from '@/app/data/menus';
+import logoDark from '../../public/logos/logo-dark.png';
+import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
     return (
@@ -11,10 +14,13 @@ const Footer = () => {
             <div className="relative z-10 py-8 mb-10 flex md:flex-row flex-col justify-between">
                 <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-muted/80 to-transparent pointer-events-none" />
                 <div className="flex flex-col justify-between">
-                    <div>
-                        <Logo className="w-fit" />
+                    <div className=''>
+                        {/* <Logo className="w-fit" /> */}
+                        <Link href={"/"}>
+                            <Image src={logoDark} alt="0byte" className=" h-14 w-14" />
+                        </Link>
                         <p className="text-muted-foreground px-4 py-2 max-w-xs text-sm">
-                            0byte makes AI content verifiable and tamper-proof using zero-knowledge proofs.
+                            SSL for AI Generated Content.
                         </p>
                     </div>
                     <p className="text-sm text-muted-foreground px-4 hidden sm:block sm:py-0 py-3">
@@ -70,7 +76,7 @@ const Footer = () => {
             </div>
 
             {/* Sparkles at bottom, rotated */}
-            <div className="absolute bottom-0 left-0 w-full h-[120px] z-0 pointer-events-none">
+            {/* <div className="absolute bottom-0 left-0 w-full h-[120px] z-0 pointer-events-none">
                 <div className="w-full h-full">
                     <SparklesCore
                         background="transparent"
@@ -82,7 +88,7 @@ const Footer = () => {
                     />
                     <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(400px_150px_at_bottom,transparent_20%,white)]" />
                 </div>
-            </div>
+            </div> */}
         </footer>
     )
 }

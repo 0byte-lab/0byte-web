@@ -13,7 +13,7 @@ const FeatureSection = () => {
             <div className='flex flex-col'>
                 <Title text={"Trusted by Design. Verified by Default."} className={"my-8 max-w-4xl mx-auto"} />
                 <div className='z-0 my-8'>
-                    <BentoGrid className={"lg:grid-rows-3"}>
+                    <BentoGrid className={"lg:grid-rows-3 h-fit"}>
                         {
                             features.map((feature, id) => (
                                 <BentoCard key={id} {...feature} />

@@ -6,6 +6,7 @@ import { AnimatedGridPattern } from './magicui/animated-grid-pattern'
 import { cn } from '@/lib/utils'
 import HeroComponent from './HeroComponent'
 import SplineArchitecture from './SplineArchitecture'
+import Link from 'next/link'
 
 const Hero = () => {
     return (
@@ -15,7 +16,9 @@ const Hero = () => {
                 <Subtitle text={"0byte embeds zero-knowledge cryptographic proof into AI-generated media — making it verifiable, tamper-resistant, and trusted by default."} className={"my-8 lg:max-w-2xl text-xl font-semibold px-4 text-muted-foreground"} />
                 <div className='flex gap-6'>
                     {/* <Button className={"cursor-pointer"} size={"lg"} variant={"outline"}>Read Docs</Button> */}
-                    <Button className={"cursor-pointer"} size={"lg"}>Start Building </Button>
+                    <Link href={"/docs"}>
+                        <Button className={"cursor-pointer"} size={"lg"}>Start Building </Button>
+                    </Link>
                 </div>
             </div>
             {/* Grid pattern background */}
