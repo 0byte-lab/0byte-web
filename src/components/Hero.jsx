@@ -7,17 +7,18 @@ import { cn } from '@/lib/utils'
 import HeroComponent from './HeroComponent'
 import SplineArchitecture from './SplineArchitecture'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
 const Hero = () => {
     return (
         <div className='min-h-screen xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto'>
             <div className='flex flex-col items-center text-center mt-10'>
                 <Title text={"The SSL for AI Generated Content."} className={"mt-20"} />
-                <Subtitle text={"0byte embeds zero-knowledge cryptographic proof into AI-generated media — making it verifiable, tamper-resistant, and trusted by default."} className={"my-8 lg:max-w-2xl text-xl font-semibold px-4 text-muted-foreground"} />
+                <Subtitle text={"A proof layer for AI-generated media, verifiable by anyone, powered by Solana."} className={"my-8 lg:max-w-2xl text-xl font-semibold px-4 text-muted-foreground"} />
                 <div className='flex gap-6'>
                     {/* <Button className={"cursor-pointer"} size={"lg"} variant={"outline"}>Read Docs</Button> */}
                     <Link href={"/docs"}>
-                        <Button className={"cursor-pointer"} size={"lg"}>Start Building </Button>
+                        <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Start Building </Button>
                     </Link>
                 </div>
             </div>

@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
 import { useCases } from '@/app/data/useCases'
 import { UseCaseCard } from './ui/use-case-card'
 import Image from 'next/image'
+import Subtitle from './Subtitle'
 
 const Usecase = () => {
     return (
@@ -14,10 +15,11 @@ const Usecase = () => {
             </div>
             <div className=''>
                 <Title text={"Trusted by Design. Used Across Domains."} className={"my-8 max-w-4xl mx-auto"} />
+                <Subtitle text={"From content to compliance — real-world applications of cryptographic provenance."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='grid lg:grid-cols-3 gap-4 py-8'>
                     {useCases.map((item, id) => (
                         <Card key={id} className="lg:h-[500px] p-4 flex flex-col justify-between overflow-hidden">
-                            <CardContent className="relative w-full h-full min-h-[300px] p-0 overflow-hidden">
+                            <CardContent className="relative w-full h-full min-h-[300px] p-0 overflow-hidden opacity-30 hover:opacity-60 transition-all ease-in">
                                 {item.background && (
                                     <div className="absolute inset-0">
                                         {item.background}
