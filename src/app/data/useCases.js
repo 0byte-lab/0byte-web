@@ -11,7 +11,7 @@ export const useCases = [
         description:
             "Embed ZK-proofs into every generated asset — proving origin without revealing prompt or model internals.",
         background: (
-            <Image src={brain} className="object-cover p-4 opacity-20" />
+            <Image src={brain} className="object-cover p-4" />
         )
     },
     {
@@ -20,7 +20,7 @@ export const useCases = [
         description:
             "Ensure that AI-generated visuals or audio used in journalism are cryptographically verified and timestamped.",
         background: (
-            <Image src={news} className="object-contain h-full pt-4 opacity-20" />
+            <Image src={news} className="object-contain h-full pt-4" />
         )
     },
     {
@@ -29,7 +29,7 @@ export const useCases = [
         description:
             "Use our SDK and APIs to offer built-in content authenticity — no blockchain knowledge required.",
         background: (
-            <Image src={code} className="object-cover p-4 opacity-20" />   
+            <Image src={code} className="object-cover p-4" />   
         )
     },
 ];

@@ -1,4 +1,5 @@
 import DeveloperSection from "@/components/DeveloperSection";
+import Faq from "@/components/Faq";
 import FeatureSection from "@/components/FeatureSection";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -17,6 +18,7 @@ export default function Home() {
       <HowItWorks />
       <Usecase />
       {/* <DeveloperSection /> */}
+      <Faq />
       <Outro />
       <Newsletter />
       {/* <Footer /> */}
