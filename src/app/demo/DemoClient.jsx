@@ -66,7 +66,7 @@ const DemoClient = () => {
                         </div>
                     )}
 
-                    {!image && !loading && <Keywords />}
+                    {!image && !loading && <Keywords onSelect={(text) => setPrompt(text)} />}
                 </div>
             </div>
             <div className='relative h-[30vh] mt-56 xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto overflow-hidden rounded-2xl backdrop-blur-lg flex items-center justify-center'>
