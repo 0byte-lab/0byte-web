@@ -82,7 +82,7 @@ export default function FileUpload() {
           <span>{errors[0]}</span>
         </div>
       )}
-      <p
+      {/* <p
         aria-live="polite"
         role="region"
         className="text-muted-foreground mt-2 text-center text-xs">
@@ -92,7 +92,7 @@ export default function FileUpload() {
           className="hover:text-foreground underline">
           API
         </a>
-      </p>
+      </p> */}
     </div>)
   );
 }
