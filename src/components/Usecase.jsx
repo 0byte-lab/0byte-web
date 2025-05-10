@@ -14,8 +14,8 @@ const Usecase = () => {
                 <Tag text={"Use Cases"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div className=''>
-                <Title text={"Trusted by Design. Used Across Domains."} className={"my-8 max-w-4xl mx-auto"} />
-                <Subtitle text={"From content to compliance — real-world applications of cryptographic provenance."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
+                <Title text={"Trusted by Design. Built for Creators, Platforms & Protocols."} className={"my-8 max-w-4xl mx-auto"} />
+                <Subtitle text={"From content generation to compliance — 0byte enables real-world applications of cryptographic verification."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='grid lg:grid-cols-3 gap-4 py-8'>
                     {useCases.map((item, id) => (
                         <Card key={id} className="lg:h-[500px] p-4 flex flex-col justify-between overflow-hidden">

@@ -1,8 +1,8 @@
 import VerifyClient from "./VerifyClient";
 
 export const metadata = {
-    title: "Verify your AI content | 0byte",
-    description: "Now verify the integrity of your content with 0byte.",
+    title: "Check AI Content Authenticity - 0byte",
+    description: "Upload AI-generated content to instantly verify its authenticity. 0byte checks embedded zero-knowledge proofs to confirm the origin, model, and timestamp — without exposing private data.",
 };
 export default function VerifyPage() {
     return <VerifyClient />

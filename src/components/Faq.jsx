@@ -10,7 +10,7 @@ const Faq = () => {
                 <Tag text={"FAQs"} className={"text-muted-foreground hover:text-muted-foreground"} />
             </div>
             <div className=''>
-                <Title text={"Securing AI content with invisible, verifiable trust."} className={"my-8 max-w-4xl mx-auto"} />
+                <Title text={"Invisible Trust. Verifiable by Anyone."} className={"my-8 max-w-4xl mx-auto"} />
                 <FaqAccordion />
             </div>
         </div>

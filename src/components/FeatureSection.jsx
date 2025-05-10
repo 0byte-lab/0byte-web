@@ -13,7 +13,7 @@ const FeatureSection = () => {
             </div>
             <div className='flex flex-col'>
                 <Title text={"Trusted by Design. Verified by Default."} className={"my-8 max-w-4xl mx-auto"} />
-                <Subtitle text={"Every feature, every layer — built to ensure integrity at scale."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
+                <Subtitle text={"From generation to verification, 0byte delivers tamper-proof trust, embedded in every pixel — and anchored on Solana."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='z-0 my-8'>
                     <BentoGrid className={"lg:grid-rows-3 h-fit"}>
                         {
