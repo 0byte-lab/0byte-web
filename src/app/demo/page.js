@@ -1,8 +1,8 @@
 import DemoClient from "./DemoClient"
 
 export const metadata = {
-    title: 'Try demo | 0byte',
-    description: '0byte is the cryptographic infrastructure layer for AI-generated content. It embeds zero-knowledge proofs into media at creation, making content verifiable, tamper-evident, and anchored on-chain for public auditability.',
+    title: 'Generate AI Content with Embedded Proof - 0byte',
+    description: '0byte is the cryptographic infrastructure layer for AI-generated content. Use the demo to generate media with embedded zero-knowledge proofs — making it verifiable, tamper-evident, and anchored on-chain for public auditability.',
 }
 
 const page = () => {

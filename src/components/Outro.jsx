@@ -24,11 +24,11 @@ const Outro = () => {
             <div className='relative z-10 flex flex-col items-center justify-center text-center px-4 gap-6'>
                 <Title text={"Built to Verify the Future"} className={"max-w-4xl mx-auto"} />
                 <Subtitle
-                    text={`0byte isn’t a watermark or a filter. It’s infrastructure — the cryptographic layer that gives AI media context, integrity, and proof. Trusted by platforms. Verifiable by anyone.`}
+                    text={`0byte isn’t a watermark or a filter. It’s cryptographic infrastructure for AI media — embedding proof, integrity, and context into every asset. Trusted by builders. Verifiable by anyone.`}
                     className={"lg:max-w-2xl mx-auto text-muted-foreground"}
                 />
                 <Link href={"/sdk"}>
-                    <Button className={"cursor-pointer"} size={"lg"}>Explore the SDK </Button>
+                    <Button className={"cursor-pointer"} size={"lg"}>Start Building with 0byte </Button>
                 </Link>
             </div>
 
