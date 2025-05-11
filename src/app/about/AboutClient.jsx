@@ -9,20 +9,19 @@ import { Star } from "lucide-react";
 import Link from "next/link";
 
 const AboutClient = () => {
-  const copyUrl = () => {
-    navigator.clipboard
-      .writeText(window.location.href)
-      .then(() => alert("Copied to clipboard"))
-      .catch((err) => console.error("Failed to copy: ", err));
-  };
+    const copyUrl = () => {
+        navigator.clipboard
+            .writeText(window.location.href)
+            .then(() => alert("Copied to clipboard"))
+            .catch((err) => console.error("Failed to copy: ", err));
+    };
 
-  return (
-    <div className="min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10">
-      <div className="my-20">
-        <Title text={"Built for Trust. Designed for Proof."} className={"my-8 max-w-3xl mx-auto"} />
-        <Subtitle text={"SSL for AI Content"} className={"my-8 max-w-3xl px-4 mx-auto text-muted-foreground"} />
-        
-        <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-4">
+    return (
+        <div className="min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10">
+            <div className="my-20">
+                <Title text={"Built for Trust. Designed for Proof."} className={"my-8 max-w-3xl mx-auto"} />
+                <Subtitle text={"0byte is the SSL for AI content — an invisible, cryptographic infrastructure layer that makes AI media verifiable by default."} className={"my-8 max-w-2xl px-4 text-center mx-auto text-muted-foreground"} />
+                <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-4">
                     <p className="text-muted-foreground">
                         In an era where AI-generated content blurs the line between real and synthetic, trust is at risk. At 0byte, we’re building a cryptographic trust layer to ensure authenticity from the moment content is created. Powered by zero-knowledge proofs (ZK proofs) and anchored to the Solana blockchain, we’re redefining trust in digital media.
                     </p>
@@ -70,33 +69,33 @@ const AboutClient = () => {
                     </p>
                     <hr />
                 </section>
-        
-        <div className="mx-auto flex flex-wrap items-center gap-4 max-w-3xl pb-32">
-          <Button
-            className="cursor-pointer"
-            variant="outline"
-            size="lg"
-            onClick={copyUrl}
-          >
-            <IconLink />
-            Copy Link
-          </Button>
-          <Link href="https://x.com/0byteHQ" passHref>
-            <Button className="cursor-pointer" variant="outline" size="lg">
-              Follow us on <IconBrandX />
-            </Button>
-          </Link>
-          <Link href="https://github.com/0byte-lab" passHref>
-            <Button className="cursor-pointer" variant="outline" size="lg">
-              <Star />
-              Star on GitHub
-              <IconBrandGithub />
-            </Button>
-          </Link>
+
+                <div className="mx-auto flex flex-wrap items-center gap-4 max-w-3xl pb-32">
+                    <Button
+                        className="cursor-pointer"
+                        variant="outline"
+                        size="lg"
+                        onClick={copyUrl}
+                    >
+                        <IconLink />
+                        Copy Link
+                    </Button>
+                    <Link href="https://x.com/0byteHQ" passHref>
+                        <Button className="cursor-pointer" variant="outline" size="lg">
+                            Follow us on <IconBrandX />
+                        </Button>
+                    </Link>
+                    <Link href="https://github.com/0byte-lab" passHref>
+                        <Button className="cursor-pointer" variant="outline" size="lg">
+                            <Star />
+                            Star on GitHub
+                            <IconBrandGithub />
+                        </Button>
+                    </Link>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default AboutClient;

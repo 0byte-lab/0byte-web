@@ -1,14 +1,24 @@
+"use client"
 import React from 'react'
+import dynamic from 'next/dynamic'
 import Title from './Title'
 import Subtitle from './Subtitle'
 import { Button } from './ui/button'
 import { AnimatedGridPattern } from './magicui/animated-grid-pattern'
 import { cn } from '@/lib/utils'
 import HeroComponent from './HeroComponent'
-import SplineArchitecture from './SplineArchitecture'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
+import heroPlaceholder from '../../public/assets/hero-placeholder.png'
 
+
+const SplineArchitecture = dynamic(() => import('./SplineArchitecture'), {
+    ssr: false,
+    loading: () => (
+        <Image src={heroPlaceholder} alt="Loading..." className="h-[60vh] w-[430px] mb-12 py-12-96 my-10 rounded-2xl mx-auto" />
+    ),
+});
 const Hero = () => {
     return (
         <div className='min-h-screen xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto'>

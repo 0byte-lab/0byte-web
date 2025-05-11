@@ -12,10 +12,10 @@ const VerifyClient = () => {
         <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
             <div className='mt-20'>
                 <Title text={"Verify AI Content. Know Its Source."} className={"my-8 max-w-4xl mx-auto"} />
-                <Subtitle text={"Upload any AI-generated media to instantly verify its authenticity and see which platform — like Midjourney or OpenAI — it originated from using 0byte’s cryptographic trust layer."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
+                <Subtitle text={"Drop AI content from platforms like Midjourney or OpenAI — 0byte will verify when, how, and by whom it was created."} className={"mb-4 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='max-w-xl my-10 mx-auto'>
                     <FileUpload />
-                    <Button className={"w-full my-6 cursor-pointer"}>Verify</Button>
+                    <Button className={"w-full my-6 cursor-pointer"}>Verify This Media</Button>
                 </div>
             </div>
             <div className='relative h-[30vh] mt-30 xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto overflow-hidden rounded-2xl backdrop-blur-lg flex items-center justify-center'>
