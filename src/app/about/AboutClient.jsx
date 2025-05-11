@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { IconBrandGithub, IconBrandX, IconLink } from "@tabler/icons-react";
 import { Star } from "lucide-react";
 import Link from "next/link";
+import Tag from "@/components/Tag";
 
 const AboutClient = () => {
     const copyUrl = () => {
@@ -19,6 +20,9 @@ const AboutClient = () => {
     return (
         <div className="min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10">
             <div className="my-20">
+                <div className='w-fit mx-auto'>
+                    <Tag text={"About"} className={"text-muted-foreground hover:text-muted-foreground"} />
+                </div>
                 <Title text={"Built for Trust. Designed for Proof."} className={"my-8 max-w-3xl mx-auto"} />
                 <Subtitle text={"0byte is the SSL for AI content — an invisible, cryptographic infrastructure layer that makes AI media verifiable by default."} className={"my-8 max-w-2xl px-4 text-center mx-auto text-muted-foreground"} />
                 <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-4">

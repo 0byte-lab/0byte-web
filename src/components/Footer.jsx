@@ -44,13 +44,22 @@ const Footer = () => {
                                 <h3 className="text-sm font-semibold">{menu.title}</h3>
                                 <div className="flex flex-col gap-4">
                                     {menu.items.map((item, index) => (
-                                        <a
-                                            key={index}
-                                            href={item.link}
-                                            className="text-sm text-muted-foreground hover:text-current transition-all ease-in"
-                                        >
-                                            {item.name}
-                                        </a>
+                                        item.disabled ? (
+                                            <p
+                                                key={index}
+                                                className="text-sm text-muted-foreground opacity-60 cursor-not-allowed"
+                                            >
+                                                {item.name} <span className='text-xs'>(Coming Soon)</span> 
+                                            </p>
+                                        ) : (
+                                            <a
+                                                key={index}
+                                                href={item.link}
+                                                className="text-sm text-muted-foreground hover:text-current transition-all ease-in"
+                                            >
+                                                {item.name}
+                                            </a>
+                                        )
                                     ))}
                                 </div>
                             </div>

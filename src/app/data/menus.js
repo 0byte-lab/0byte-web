@@ -6,15 +6,15 @@ export const menus = {
         { name: "SDK", href: "/sdk" },
         { name: "Docs", href: "/docs", disabled: true },
         // { name: "Blog", href: "/blog", disabled: true },
-        { name: "Verify", href: "/verify" },
+        { name: "Verify", href: "/verify", disabled: true },
     ],
     footer: [
         {
             title: "Product",
             items: [
-                { name: "Verify", link: "/verify" },
+                { name: "Verify", link: "/verify", disabled: true },
                 { name: "SDK", link: "/sdk" },
-                { name: "Docs", link: "/docs" },
+                { name: "Docs", link: "/docs", disabled: true },
             ],
         },
         {
