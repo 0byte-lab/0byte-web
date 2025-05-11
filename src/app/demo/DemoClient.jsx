@@ -40,7 +40,7 @@ const DemoClient = () => {
         <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
             <div className='mt-20'>
                 <Title text={"Generate with Proof. In Seconds."} className={"my-8 max-w-4xl mx-auto"} />
-                <Subtitle text={"Generate AI content and see how 0byte embeds invisible, verifiable proof at the moment of creation — without compromising privacy or performance."} className={"my-8 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
+                <Subtitle text={"0byte embeds zero-knowledge proof at the moment of creation — invisible, verifiable, and anchored on Solana."} className={"my-8 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='my-20 w-full flex flex-col items-center'>
                     {loading && <Skeleton className="h-96 w-96 rounded-2xl" />}
 

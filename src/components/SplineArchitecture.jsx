@@ -2,7 +2,7 @@ import Spline from '@splinetool/react-spline';
 
 export default function SplineArchitecture() {
   return (
-    <div className="relative h-[90vh] max-w-5xl mx-auto mb-12 overflow-x-hidden">
+    <div className="relative h-[80vh] sm:w-full w-screen sm:mx-auto mb-12 overflow-x-hidden">
 
       {/* Spline model above the grid */}
       <Spline
