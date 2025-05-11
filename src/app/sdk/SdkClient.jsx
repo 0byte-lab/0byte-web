@@ -1,4 +1,5 @@
 import Subtitle from '@/components/Subtitle'
+import Tag from '@/components/Tag'
 import Title from '@/components/Title'
 import { Button } from '@/components/ui/button'
 import { CodeBlock } from '@/components/ui/code-block'
@@ -9,6 +10,9 @@ const SdkClient = () => {
     return (
         <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
             <div className='mt-20'>
+                <div className='w-fit mx-auto'>
+                    <Tag text={"SDK"} className={"text-muted-foreground hover:text-muted-foreground"} />
+                </div>
                 <Title text={"Integrate into your AI Pipeline"} className={"my-8 max-w-4xl mx-auto"} />
                 <Subtitle text={"Bring trust to your content at the moment it’s created. 0byte’s SDK makes it seamless to embed cryptographic proof into AI-generated media."} className={"my-8 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <section className='max-w-3xl text-left mx-auto py-10 px-4 space-y-6'>

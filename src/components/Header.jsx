@@ -12,8 +12,20 @@ const Header = () => {
                 <div className='sm:flex items-center justify-center hidden gap-4'>
                     {
                         menus.header.map((item, index) => (
-                            <Link key={index} href={item.href}>
-                                <Button size={""} variant={"ghost"} className={"cursor-pointer text-muted-foreground"}>{item.name}</Button>
+                            <Link key={index} href={item.disabled ? "#" : item.href}>
+                                <Button
+                                    disabled={item.disabled}
+                                    size=""
+                                    variant="ghost"
+                                    className="cursor-pointer text-muted-foreground relative"
+                                >
+                                    {item.name}
+                                    {item.disabled && (
+                                        <span className="flex lg:flex-col flex-row text-[10px] text-muted-foreground opacity-60">
+                                            (Coming Soon)
+                                        </span>
+                                    )}
+                                </Button>
                             </Link>
                         ))
                     }
