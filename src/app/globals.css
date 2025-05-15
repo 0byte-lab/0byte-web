@@ -116,7 +116,26 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .fade-edges {
+    -webkit-mask-image:
+      radial-gradient(circle at top right, transparent 0%, black 20%, black 40%),
+      radial-gradient(circle at bottom left, transparent 0%, black 20%, black 40%);
+    mask-image:
+      radial-gradient(circle at top right, transparent 0%, black 20%, black 40%),
+      radial-gradient(circle at bottom left, transparent 0%, black 40%, black 40%),
+      radial-gradient(circle at bottom left, transparent 0%, black 40%, black 40%);
+    -webkit-mask-composite: source-in;
+    mask-composite: intersect;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 }

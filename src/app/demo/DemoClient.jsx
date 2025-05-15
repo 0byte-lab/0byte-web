@@ -12,6 +12,7 @@ import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import logo from '../../../public/logos/logo-dark.png'
 import { Skeleton } from '@/components/ui/skeleton'
+import Tag from '@/components/Tag'
 
 const DemoClient = () => {
     const [image, setImage] = useState(null);
@@ -39,6 +40,9 @@ const DemoClient = () => {
     return (
         <div className='min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10'>
             <div className='mt-20'>
+                <div className='w-fit mx-auto'>
+                    <Tag text={"Under Development"} className={"text-muted-foreground hover:text-muted-foreground"} />
+                </div>
                 <Title text={"Generate with Proof. In Seconds."} className={"my-8 max-w-4xl mx-auto"} />
                 <Subtitle text={"0byte embeds zero-knowledge proof at the moment of creation — invisible, verifiable, and anchored on Solana."} className={"my-8 max-w-3xl mx-auto px-4 text-center text-muted-foreground"} />
                 <div className='my-20 w-full flex flex-col items-center'>
@@ -51,7 +55,7 @@ const DemoClient = () => {
                     {!loading && !image && (
                         <div className='relative max-w-4xl mx-auto w-full'>
                             <Input
-                                placeholder={"Create a tree image..."}
+                                placeholder={"Type your prompt here..."}
                                 className={"w-full py-6 px-6 pr-32 rounded-4xl"}
                                 value={prompt}
                                 onChange={(e) => setPrompt(e.target.value)}
@@ -60,6 +64,7 @@ const DemoClient = () => {
                                 className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full px-6"
                                 size="icon"
                                 onClick={() => generateImage(prompt)}
+                                disabled
                             >
                                 <ArrowRight />
                             </Button>

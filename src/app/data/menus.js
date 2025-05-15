@@ -29,6 +29,6 @@ export const menus = {
     social: [
         { name: "Github", link: "https://github.com/0byte-lab", Icon: IconBrandGithub },
         { name: "X", link: "https://x.com/0byteHQ", Icon: IconBrandX },
-        { name: "Discord", link: "#", Icon: IconBrandDiscord },
+        { name: "Discord", link: "https://discord.gg/GkAn9cBEfR", Icon: IconBrandDiscord },
     ]
 };
