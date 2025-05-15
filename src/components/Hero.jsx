@@ -11,6 +11,7 @@ import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Image from 'next/image'
 import heroPlaceholder from '../../public/assets/hero-placeholder.png'
+import ArchitectureGrid from './Architecture'
 
 
 const SplineArchitecture = dynamic(() => import('./SplineArchitecture'), {
@@ -46,7 +47,22 @@ const Hero = () => {
                 )}
             />
             {/* <HeroComponent className={""} /> */}
-            <SplineArchitecture />
+            {/* <SplineArchitecture /> */}
+            <div className="relative w-full ml-33 -mt-8 -z-10 flex justify-center items-center">
+                <div className="absolute -z-10 h-[400px] w-[600px] rounded-full bg-gradient-to-tr from-white/10 via-white/5 to-transparent blur-[80px] opacity-60" />
+
+                <div
+                    className="fade-edges transform-gpu transition-all duration-1000 ease-in-out w-full max-w-8xl"
+                    style={{
+                        transform: "rotateX(50deg) rotateY(20deg) rotateZ(328deg) scale(1.2)",
+                        transformStyle: "preserve-3d",
+                        height: "900px", // increased from 800px
+                        background: "black",
+                    }}
+                >
+                    <ArchitectureGrid />
+                </div>
+            </div>
         </div>
     )
 }
