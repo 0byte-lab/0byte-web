@@ -8,6 +8,8 @@ import { IconBrandGithub, IconBrandX, IconLink } from "@tabler/icons-react";
 import { Star } from "lucide-react";
 import Link from "next/link";
 import Tag from "@/components/Tag";
+import Image from "next/image";
+import flowchart from '../../../public/assets/flowchart.png';
 
 const AboutClient = () => {
     const copyUrl = () => {
@@ -46,16 +48,16 @@ const AboutClient = () => {
                         Think of us as the SSL for AI media—invisible, verifiable, and built for trust. Unlike reactive solutions, we sign and embed authenticity at the point of creation, stopping manipulation before it starts.
                     </p>
                     <h2 className='text-xl font-semibold'>How It Works</h2>
-                    <ol className='list-decimal list-inside text-muted-foreground ml-4'>
-                        <li><span className='font-semibold'>Creation:</span> An AI generates content (e.g., image, video, text).</li>
-                        <li><span className='font-semibold'>Signing:</span> 0byte creates a cryptographic proof using ZK proofs.</li>
-                        <li><span className='font-semibold'>Embedding:</span> The proof is invisibly embedded into the content.</li>
-                        <li><span className='font-semibold'>Anchoring:</span> The proof is recorded on Solana’s blockchain.</li>
-                        <li><span className='font-semibold'>Verification:</span> Anyone can check the proof against the blockchain, ensuring authenticity.</li>
+                    <ol className='list-decimal list-inside flex flex-col gap-1 text-muted-foreground ml-4'>
+                        <li><span className='font-semibold'>Prompting:</span> The user prompts an AI model (e.g., “a futuristic city”) — this could be Stability AI or any custom model.</li>
+                        <li><span className='font-semibold'>Proof Generation:</span> 0byte SDK captures the generation metadata (prompt hash, model ID, timestamp, etc.) and creates a zero-knowledge proof.</li>
+                        <li><span className='font-semibold'>Proof Embedding:</span> This proof is invisibly embedded into the generated media at the pixel/frame level — no visible watermark or metadata required.</li>
+                        <li><span className='font-semibold'>On-Chain Anchoring:</span> A hash of the proof is anchored to Solana, ensuring public auditability and tamper evidence.</li>
+                        <li><span className='font-semibold'>Public Verification:</span> Anyone can verify the file via a public API or CLI tool — without needing the original model or exposing the prompt.</li>
                     </ol>
                     <h3 className='font-semibold'>Visual Flow:</h3>
-                    <p className='text-muted-foreground mt-4'>
-                        Need to upload a visual flow diagram here.
+                    <p className='text-muted-foreground mt-4 w-full'>
+                        <Image src={flowchart} className="w-auto h-full" alt="Flowchart" />
                     </p>
                     <h2 className='text-xl font-semibold'>Why It Matters</h2>
                     <ul className='list-disc list-inside text-muted-foreground ml-4'>

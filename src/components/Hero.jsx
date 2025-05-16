@@ -8,7 +8,7 @@ import { AnimatedGridPattern } from './magicui/animated-grid-pattern'
 import { cn } from '@/lib/utils'
 import HeroComponent from './HeroComponent'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, Code, Copy } from 'lucide-react'
 import Image from 'next/image'
 import heroPlaceholder from '../../public/assets/hero-placeholder.png'
 import ArchitectureGrid from './Architecture'
@@ -26,10 +26,13 @@ const Hero = () => {
             <div className='flex flex-col items-center text-center mt-10'>
                 <Title text={"SSL of AI Content — Powered by Solana."} className={"mt-20 max-w-4xl mx-auto"} />
                 <Subtitle text={"Invisible, tamper-proof, and verifiable by anyone — 0byte brings cryptographic trust to AI-generated media, from the moment it’s created."} className={"my-8 lg:max-w-3xl text-xl font-semibold px-4 text-muted-foreground"} />
-                <div className='flex gap-6'>
+                <div className='flex gap-6 backdrop-blur-lg'>
                     {/* <Button className={"cursor-pointer"} size={"lg"} variant={"outline"}>Read Docs</Button> */}
                     <Link href={"/sdk"}>
-                        <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Start Building </Button>
+                        <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Get Started </Button>
+                    </Link>
+                    <Link href={"/about"}>
+                        <Button variant={"outline"} size={"lg"} className={"cursor-pointer"}>Learn More</Button>
                     </Link>
                 </div>
             </div>

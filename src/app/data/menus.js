@@ -6,13 +6,13 @@ export const menus = {
         { name: "SDK", href: "/sdk" },
         { name: "Docs", href: "/docs", disabled: true },
         // { name: "Blog", href: "/blog", disabled: true },
-        { name: "Verify", href: "/verify", disabled: true },
+        { name: "Verify", href: "/verify", disabled: false },
     ],
     footer: [
         {
             title: "Product",
             items: [
-                { name: "Verify", link: "/verify", disabled: true },
+                { name: "Verify", link: "/verify", disabled: false },
                 { name: "SDK", link: "/sdk" },
                 { name: "Docs", link: "/docs", disabled: true },
             ],

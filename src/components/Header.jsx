@@ -3,6 +3,7 @@ import Logo from './Logo'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import { menus } from '@/app/data/menus'
+import { ArrowUpRight } from 'lucide-react'
 
 const Header = () => {
     return (
@@ -32,7 +33,7 @@ const Header = () => {
                 </div>
                 <div className='flex'>
                     <Link href={"/demo"}>
-                        <Button className={"cursor-pointer"} variant={""} size={"lg"}>Try Demo</Button>
+                        <Button className={"cursor-pointer"} variant={""} size={"lg"}>Try Demo <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
