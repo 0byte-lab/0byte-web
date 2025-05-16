@@ -30,41 +30,44 @@ const SdkClient = () => {
                         <li>No blockchain knowledge required</li>
                     </ul>
                     <h1 className='text-xl font-semibold'>Install & Setup</h1>
-                    <h2 className='font-semibold'>Quick Install</h2>
+                    <h2 className='font-semibold'>Installation</h2>
                     <CodeBlock
                         language={"bash"}
-                        code={`npm install 0byte-sdk`}
+                        code={`pip install zbyte`}
                         className={"w-fit"}
                         filename={"install.sh"}
                     />
-                    <h2 className='font-semibold'>Basic Usage</h2>
+                    <h2 className='font-semibold'>Quickstart</h2>
                     <CodeBlock
-                        code={`import { createZeroByte } from '0byte-sdk';
+                        code={`from zbyte import Client, Config
 
-const zeroByte = createZeroByte({
-    network: 'mainnet',
-});
+config = Config(
+    provider="stability",
+    model="stable-diffusion-xl-base-1.0",
+    api_key="your_huggingface_token",
+    platform="0byte",
+)
                         
-const proof = await zeroByte.generateProof({
-    promptHash: hash('a fox in space'),
-    modelId: 'stable-diffusion-xl',
-    timestamp: Date.now()
-});
+client = Client(config)
                         
-await zeroByte.embedProofIntoImage('output.png', proof);`}
+result = client.generate_image("A futuristic city at sunset")
+with open("output.jpg", "wb") as f:
+f.write(result.image_bytes)
+                        
+print("✅ Image verified at:", result.transaction_id)`}
                         language={"javascript"}
                         className={"w-fit"}
                         filename={"example.js"}
                     />
                     <h1 className='text-xl font-semibold'>What You Get</h1>
-                    <ul className='list-disc list-inside text-muted-foreground ml-4'>
-                        <li>Easy-to-integrate SDK for any GenAI platform</li>
-                        <li>Zero-knowledge proof engine (privacy-preserving)</li>
-                        <li>Embedded media proof structure</li>
-                        <li>On-chain anchoring to Solana</li>
-                        <li>Verifier API + Open-source components</li>
+                    <ul className='flex flex-col gap-1 list-disc list-inside text-muted-foreground'>
+                        <li><span className='font-semibold'>Built-in AI Image Generation</span> — Generate images via Stability AI (default) or plug in your own model</li>
+                        <li><span className='font-semibold'>Zero-Knowledge Proof Engine</span> — Privacy-preserving proofs for prompt, model, and timestamp</li>
+                        <li><span className='font-semibold'>Embedded Media Proof Structure</span> — Steganographically injects verifiable data into media</li>
+                        <li><span className='font-semibold'>On-Chain Anchoring</span> — Anchors proof hashes to Solana for immutable auditability</li>
+                        <li><span className='font-semibold'>Verifier API + Open-Source Components</span> — Anyone can verify media without a wallet or watermark</li>
                     </ul>
-                    <h1 className='text-xl font-semibold'>Verifier Integration</h1>
+                    {/* <h1 className='text-xl font-semibold'>Verifier Integration</h1>
                     <p className='text-muted-foreground'>
                         Let your users or platforms verify content instantly:
                     </p>
@@ -79,10 +82,10 @@ if (result.verified) {
                         language={"javascript"}
                         className={"w-fit"}
                         filename={"example.js"}
-                    />
+                    /> */}
                     <h1 className='text-xl font-semibold'>Docs + API</h1>
                     <p className='text-muted-foreground'>
-                        Want to go deeper? View the full SDK <a href='#' className='hover:underline hover:text-accent-foreground'>documentation</a>  and API reference.
+                        Want to go deeper? View the full SDK <a href='https://github.com/0byte-lab/python-sdk/blob/main/README.md' className='hover:underline hover:text-accent-foreground'>documentation</a>  and API reference.
                     </p>
                     <hr />
                     <Link href={"/"}>

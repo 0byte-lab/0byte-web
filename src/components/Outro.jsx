@@ -28,7 +28,7 @@ const Outro = () => {
                     className={"lg:max-w-2xl mx-auto text-muted-foreground"}
                 />
                 <Link href={"/sdk"}>
-                    <Button className={"cursor-pointer"} size={"lg"}>Start Building with 0byte </Button>
+                    <Button className={"cursor-pointer"} size={"lg"}>Start Building </Button>
                 </Link>
             </div>
 
