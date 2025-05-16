@@ -25,7 +25,7 @@ const Outro = () => {
                 <Title text={"Built to Verify the Future"} className={"max-w-4xl mx-auto"} />
                 <Subtitle
                     text={`0byte isn’t a watermark or a filter. It’s cryptographic infrastructure for AI media — embedding proof, integrity, and context into every asset. Trusted by builders. Verifiable by anyone.`}
-                    className={"lg:max-w-2xl mx-auto text-muted-foreground"}
+                    className={"lg:max-w-2xl mx-auto text-muted-foreground bg-black/60"}
                 />
                 <Link href={"/sdk"}>
                     <Button className={"cursor-pointer"} size={"lg"}>Start Building </Button>
