@@ -55,9 +55,9 @@ with open("output.jpg", "wb") as f:
 f.write(result.image_bytes)
                         
 print("✅ Image verified at:", result.transaction_id)`}
-                        language={"javascript"}
+                        language={"python"}
                         className={"w-fit"}
-                        filename={"example.js"}
+                        filename={"generate_image.py"}
                     />
                     <h1 className='text-xl font-semibold'>What You Get</h1>
                     <ul className='flex flex-col gap-1 list-disc list-inside text-muted-foreground'>
