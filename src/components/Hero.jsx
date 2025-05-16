@@ -51,7 +51,7 @@ const Hero = () => {
             />
             {/* <HeroComponent className={""} /> */}
             {/* <SplineArchitecture /> */}
-            <div className="relative min-h-screen w-full ml-8 select-none -mt-4 -z-10 flex justify-center items-center">
+            <div className="relative min-h-screen w-full ml-8 select-none -mt-8 -z-10 flex justify-center items-center">
                 <div className="absolute -z-10 h-[400px] w-[600px] rounded-full bg-gradient-to-tr from-white/10 via-white/5 to-transparent blur-[80px] opacity-60" />
                 <div
                     className="fade-edges transform-gpu transition-all duration-1000 ease-in-out w-full max-w-8xl"
