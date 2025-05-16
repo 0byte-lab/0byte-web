@@ -14,6 +14,7 @@ import { SpinningText } from '@/components/magicui/spinning-text'
 import Link from 'next/link'
 import { ArrowRight, ArrowUpRight } from 'lucide-react'
 import { ReloadIcon } from '@radix-ui/react-icons'
+import { Connection, clusterApiUrl } from '@solana/web3.js'
 
 const VerifyClient = () => {
     const [file, setFile] = useState(null)
@@ -80,7 +81,6 @@ const VerifyClient = () => {
             setPlatform(proof.platform)
             console.log('Proof hash', proof.txn);
 
-            const { Connection, clusterApiUrl } = await import('@solana/web3.js')
 
             const connection = new Connection(clusterApiUrl('devnet'), 'confirmed')
             try {
