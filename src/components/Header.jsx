@@ -32,7 +32,7 @@ const Header = () => {
                     }
                 </div>
                 <div className='flex'>
-                    <Link href={"/demo"}>
+                    <Link href={"https://generator-production-5ec7.up.railway.app/"}>
                         <Button className={"cursor-pointer"} variant={""} size={"lg"}>Try Demo <ArrowUpRight /></Button>
                     </Link>
                 </div>

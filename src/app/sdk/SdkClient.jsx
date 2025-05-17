@@ -88,7 +88,7 @@ if (result.verified) {
                         Want to go deeper? View the full SDK <a href='https://github.com/0byte-lab/python-sdk/blob/main/README.md' className='hover:underline hover:text-accent-foreground'>documentation</a>  and API reference.
                     </p>
                     <hr />
-                    <Link href={"/"}>
+                    <Link href={"/https://discord.gg/GkAn9cBEfR"}>
                         <Button className={"cursor-pointer"} variant={"outline"}>Join Discord <IconBrandDiscord /></Button>
                     </Link>
                 </section>
