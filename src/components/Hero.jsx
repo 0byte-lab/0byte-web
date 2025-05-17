@@ -8,7 +8,7 @@ import { AnimatedGridPattern } from './magicui/animated-grid-pattern'
 import { cn } from '@/lib/utils'
 import HeroComponent from './HeroComponent'
 import Link from 'next/link'
-import { ArrowRight, Code, Copy } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, Code, Copy } from 'lucide-react'
 import Image from 'next/image'
 import heroPlaceholder from '../../public/assets/hero-placeholder.png'
 import ArchitectureGrid from './Architecture'
@@ -31,8 +31,8 @@ const Hero = () => {
                     <Link href={"/sdk"}>
                         <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Get Started </Button>
                     </Link>
-                    <Link href={"/about"}>
-                        <Button variant={"outline"} size={"lg"} className={"cursor-pointer"}>Learn More</Button>
+                    <Link href={"https://www.loom.com/share/d6d7202935af42ee8fc1477ad233ee63?sid=a284aab4-e4f5-4a6e-abd1-0f596361bc9e"}>
+                        <Button size={"lg"} variant={"outline"} className={"cursor-pointer"}>Watch Demo <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
