@@ -125,7 +125,7 @@ const VerifyClient = () => {
                                 setShowResult(false)
                             }}
                         />
-                        {fileName && <p className='text-sm text-muted-foreground mt-2'>{fileName}</p>}
+                        {fileName && <p className='text-sm break-words text-muted-foreground mt-2'>{fileName}</p>}
 
                         <Button className={'w-full my-6 cursor-pointer'} onClick={handleVerify}>
                             Verify this Media
