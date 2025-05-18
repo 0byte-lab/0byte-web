@@ -57,7 +57,7 @@ const AboutClient = () => {
                     </ol>
                     <h3 className='font-semibold'>Visual Flow:</h3>
                     <p className='text-muted-foreground mt-4 w-full'>
-                        <Image src={flowchart} className="w-auto h-full" alt="Flowchart" />
+                        <Image src={flowchart} className="w-auto h-auto" alt="Flowchart" />
                     </p>
                     <h2 className='text-xl font-semibold'>Why It Matters</h2>
                     <ul className='list-disc list-inside text-muted-foreground ml-4'>

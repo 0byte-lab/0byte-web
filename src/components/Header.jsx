@@ -1,11 +1,14 @@
+"use client"
 import React from 'react'
 import Logo from './Logo'
 import { Button } from './ui/button'
 import Link from 'next/link'
 import { menus } from '@/app/data/menus'
 import { ArrowUpRight } from 'lucide-react'
+import { useIsMobile } from './hooks/use-mobile'
 
 const Header = () => {
+    const isMobile = useIsMobile()
     return (
         <div className='xl:max-w-6xl max-w-7xl mx-4 py-2 xl:mx-auto sticky top-0 z-30 backdrop-blur-lg'>
             <div className='flex items-center justify-between'>
@@ -33,7 +36,7 @@ const Header = () => {
                 </div>
                 <div className='flex'>
                     <Link href={"https://generator-production-1439.up.railway.app/"}>
-                        <Button className={"cursor-pointer"} variant={""} size={"lg"}>Try Demo <ArrowUpRight /></Button>
+                        <Button className={"cursor-pointer"} variant={""} size={isMobile ? "" : "lg"}>Try Demo <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
