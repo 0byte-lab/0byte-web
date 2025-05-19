@@ -26,13 +26,13 @@ const Hero = () => {
             <div className='xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto flex flex-col items-center text-center mt-10'>
                 <Title text={"SSL of AI Content — Powered by Solana."} className={"mt-20 max-w-4xl mx-auto"} />
                 <Subtitle text={"Invisible, tamper-proof, and verifiable by anyone — 0byte brings cryptographic trust to AI-generated media, from the moment it’s created."} className={"my-8 lg:max-w-3xl text-xl font-semibold px-4 text-muted-foreground"} />
-                <div className='flex gap-6 backdrop-blur-lg'>
+                <div className='flex gap-6 bg-background/40'>
                     {/* <Button className={"cursor-pointer"} size={"lg"} variant={"outline"}>Read Docs</Button> */}
                     <Link href={"/sdk"}>
                         <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Get Started </Button>
                     </Link>
                     <Link href={"https://www.loom.com/share/d6d7202935af42ee8fc1477ad233ee63?sid=a284aab4-e4f5-4a6e-abd1-0f596361bc9e"}>
-                        <Button size={"lg"} variant={"outline"} className={"cursor-pointer"}>Watch Demo <ArrowUpRight /></Button>
+                        <Button size={"lg"} variant={"link"} className={"cursor-pointer"}>Watch Demo <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
