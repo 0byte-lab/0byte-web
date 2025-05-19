@@ -22,8 +22,8 @@ const SplineArchitecture = dynamic(() => import('./SplineArchitecture'), {
 });
 const Hero = () => {
     return (
-        <div className='min-h-screen xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto'>
-            <div className='flex flex-col items-center text-center mt-10'>
+        <div className='min-h-screen '>
+            <div className='xl:max-w-6xl max-w-7xl mx-4 xl:mx-auto flex flex-col items-center text-center mt-10'>
                 <Title text={"SSL of AI Content — Powered by Solana."} className={"mt-20 max-w-4xl mx-auto"} />
                 <Subtitle text={"Invisible, tamper-proof, and verifiable by anyone — 0byte brings cryptographic trust to AI-generated media, from the moment it’s created."} className={"my-8 lg:max-w-3xl text-xl font-semibold px-4 text-muted-foreground"} />
                 <div className='flex gap-6 backdrop-blur-lg'>
@@ -51,14 +51,14 @@ const Hero = () => {
             />
             {/* <HeroComponent className={""} /> */}
             {/* <SplineArchitecture /> */}
-            <div className="relative min-h-screen w-full ml-8 select-none -mt-8 -z-10 flex justify-center items-center">
+            <div className="relative min-h-screen overflow-hidden w-full select-none lg:-mt-2 -mt-12 -z-10 flex justify-center items-center">
                 <div className="absolute -z-10 h-[400px] w-[600px] rounded-full bg-gradient-to-tr from-white/10 via-white/5 to-transparent blur-[80px] opacity-60" />
                 <div
                     className="fade-edges transform-gpu transition-all duration-1000 ease-in-out w-full max-w-8xl"
                     style={{
                         position: "absolute",
                         top: "0",
-                        left: "10%",
+                        left: "20%",
                         height: "1400px",
                         width: "1200px",
                         transform: "rotateX(50deg) rotateY(20deg) rotateZ(328deg) scale(1.2)",

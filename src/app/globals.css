@@ -130,7 +130,7 @@
     mask-image:
       radial-gradient(circle at top right, transparent 0%, black 20%, black 40%),
       radial-gradient(circle at bottom left, transparent 0%, black 40%, black 40%),
-      radial-gradient(circle at bottom left, transparent 0%, black 40%, black 40%);
+      radial-gradient(circle at bottom left, transparent 0%, black 30%, black 40%);
     -webkit-mask-composite: source-in;
     mask-composite: intersect;
     mask-repeat: no-repeat;
