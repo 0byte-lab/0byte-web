@@ -18,6 +18,18 @@ export const metadata = {
   title: "0byte - SSL for AI Generated Content Powered by Solana.",
   description:
     "0byte is the cryptographic infrastructure layer for AI-generated content. It embeds zero-knowledge proofs into media at creation, making content verifiable, tamper-evident, and anchored on-chain for public auditability.",
+  openGraph: {
+    type: "website",
+    url: "https://0byte.tech",
+    siteName: "0byte",
+    images: [
+      {
+        url: "/assets/open-graph.jpeg",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  }
 };
 
 export default function RootLayout({ children }) {
