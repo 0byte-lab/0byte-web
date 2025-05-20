@@ -25,8 +25,6 @@ export const metadata = {
     images: [
       {
         url: "https://github.com/user-attachments/assets/b75d322f-f57a-49a2-872f-cb15ae22e373",
-        width: 1200,
-        height: 630,
       },
     ],
   }
