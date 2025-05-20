@@ -15,7 +15,7 @@ export default function Home() {
       {/* <Header /> */}
       <Hero />
       <FeatureSection />
-      {/* <HowItWorks /> */}
+      <HowItWorks />
       <Usecase />
       {/* <DeveloperSection /> */}
       <Faq />
