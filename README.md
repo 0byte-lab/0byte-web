@@ -2,6 +2,9 @@
   <img src="public/logos/logo-dark.png" alt="0byte logo" width="200"/>
 </p>
 
+![0byte - SSL for AI Generated Content Powered by Solana_ · 7 51pm · 05-20](https://github.com/user-attachments/assets/b75d322f-f57a-49a2-872f-cb15ae22e373)
+
+
 <p align="center">
   <a href="https://www.0byte.tech/">
     <img src="https://img.shields.io/badge/Get%20Started-1abc9c?style=for-the-badge" alt="Get Started">
