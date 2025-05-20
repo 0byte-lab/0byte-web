@@ -32,7 +32,7 @@ const Hero = () => {
                         <Button className={"cursor-pointer group transition-all ease-in"} size={"lg"}>Get Started </Button>
                     </Link>
                     <Link href={"https://www.loom.com/share/d6d7202935af42ee8fc1477ad233ee63?sid=a284aab4-e4f5-4a6e-abd1-0f596361bc9e"}>
-                        <Button size={"lg"} variant={"link"} className={"cursor-pointer"}>Watch Demo <ArrowUpRight /></Button>
+                        <Button size={"lg"} variant={"link"} className={"cursor-pointer"}>Watch Pitch <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
