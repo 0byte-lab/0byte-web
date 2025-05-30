@@ -21,13 +21,13 @@ const AboutClient = () => {
 
     return (
         <div className="min-h-screen xl:max-w-6xl rounded-2xl flex-col max-w-7xl mx-4 xl:mx-auto my-10">
-            <div className="my-20">
+            <div className="mt-20">
                 <div className='w-fit mx-auto'>
                     <Tag text={"About"} className={"text-muted-foreground hover:text-muted-foreground"} />
                 </div>
                 <Title text={"Built for Trust. Designed for Proof."} className={"my-8 max-w-3xl mx-auto"} />
                 <Subtitle text={"0byte is the SSL for AI content — an invisible, cryptographic infrastructure layer that makes AI media verifiable by default."} className={"my-8 max-w-2xl px-4 text-center mx-auto text-muted-foreground"} />
-                <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-4">
+                <section className="max-w-3xl text-left mx-auto py-10 px-4 space-y-6">
                     <p className="text-muted-foreground">
                         In an era where AI-generated content blurs the line between real and synthetic, trust is at risk. At 0byte, we’re building a cryptographic trust layer to ensure authenticity from the moment content is created. Powered by zero-knowledge proofs (ZK proofs) and anchored to the Solana blockchain, we’re redefining trust in digital media.
                     </p>
@@ -76,23 +76,23 @@ const AboutClient = () => {
                     <hr />
                 </section>
 
-                <div className="mx-auto flex flex-wrap items-center gap-4 max-w-3xl pb-32">
+                <div className="mx-auto flex flex-wrap items-center gap-4 px-4 max-w-3xl pb-32">
                     <Button
                         className="cursor-pointer"
                         variant="outline"
-                        size="lg"
+                        size="sm"
                         onClick={copyUrl}
                     >
                         <IconLink />
                         Copy Link
                     </Button>
                     <Link href="https://x.com/0byteHQ" passHref>
-                        <Button className="cursor-pointer" variant="outline" size="lg">
+                        <Button className="cursor-pointer" variant="outline" size="sm">
                             Follow us on <IconBrandX />
                         </Button>
                     </Link>
                     <Link href="https://github.com/0byte-lab" passHref>
-                        <Button className="cursor-pointer" variant="outline" size="lg">
+                        <Button className="cursor-pointer" variant="outline" size="sm">
                             <Star />
                             Star on GitHub
                             <IconBrandGithub />
