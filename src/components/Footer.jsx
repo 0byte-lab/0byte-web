@@ -16,8 +16,8 @@ const Footer = () => {
                 <div className="flex flex-col justify-between">
                     <div className=''>
                         {/* <Logo className="w-fit" /> */}
-                        <Link href={"/"}>
-                            <Image src={logoDark} alt="0byte" className=" h-14 w-14" />
+                        <Link href={"/"} className='w-fit'>
+                            <Image src={logoDark} alt="0byte Logo" className=" h-14 w-14" />
                         </Link>
                         <p className="text-muted-foreground px-4 py-2 max-w-xs text-sm">
                             SSL for AI Generated Content.

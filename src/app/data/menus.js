@@ -21,7 +21,7 @@ export const menus = {
             title: "Resources",
             items: [
                 { name: "About", link: "/about" },
-                { name: "FAQ", link: "#faq" },
+                { name: "FAQ", link: "/#faq" },
                 // { name: "Blog", link: "/blog" },
             ],
         },

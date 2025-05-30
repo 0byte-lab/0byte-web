@@ -89,7 +89,7 @@ if (result.verified) {
                     </p>
                     <hr />
                     <Link href={"https://discord.gg/GkAn9cBEfR"}>
-                        <Button className={"cursor-pointer"} variant={"outline"}>Join Discord <IconBrandDiscord /></Button>
+                        <Button className={"cursor-pointer"} variant={"outline"} size={"sm"}>Join Discord <IconBrandDiscord /></Button>
                     </Link>
                 </section>
             </div>
