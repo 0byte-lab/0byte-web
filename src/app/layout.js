@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { OpenPanelComponent } from "@openpanel/nextjs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <OpenPanelComponent
+          clientId="c1978b80-adf0-48d3-8440-1aa91edb4701"
+          trackScreenViews={true}
+          trackAttributes={true}
+          trackOutgoingLinks={true}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
