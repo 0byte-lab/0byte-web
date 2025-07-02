@@ -2,7 +2,7 @@
   <img src="public/logos/logo-dark.png" alt="0byte logo" width="200"/>
 </p>
 
-![0byte - SSL for AI Generated Content Powered by Solana_ · 7 51pm · 05-20](https://github.com/user-attachments/assets/b75d322f-f57a-49a2-872f-cb15ae22e373)
+![0byte - SSL for AI Generated Content_](https://github.com/user-attachments/assets/e55741f3-7685-4fcf-bb5b-83b77bb5e5b5)
 
 
 <p align="center">
