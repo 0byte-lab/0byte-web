@@ -12,7 +12,7 @@ export default function ArchitectureGrid() {
           <div className="flex flex-col lg:h-60 lg:w-60 opacity-60 w-auto bg-neutral-900 justify-between border gap-4">
             <Image
               src={logo}
-              alt="Logo"
+              alt="0byte Logo"
               className="h-20 grayscale w-auto ml-auto opacity-70" // <-- Constrain height, let width auto-scale
             />
             <div className="flex items-center gap-3 text-muted-foreground px-6 py-2 text-sm w-full justify-start"><div className="h-2 w-2 rounded-full bg-green-500" /> 0BYTE </div>

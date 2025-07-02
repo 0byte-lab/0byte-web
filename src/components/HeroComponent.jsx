@@ -8,7 +8,7 @@ const HeroComponent = () => {
 
             {/* Layer 4 */}
             <div className="w-[250px] transition-all duration-500 group-hover:-mb-20 ease-in-out  rotate-x-60 rotate-y-0 -rotate-z-50 shadow-2xl border border-white/10 bg-black rounded-2xl backdrop-blur-md z-40">
-                <Image src={logo} alt="Logo" className="w-full h-full object-cover" />
+                <Image src={logo} alt="0byte Logo" className="w-full h-full object-cover" />
             </div>
 
             {/* Layer 3 */}
