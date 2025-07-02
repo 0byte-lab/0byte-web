@@ -16,16 +16,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "0byte - SSL for AI Generated Content Powered by Solana.",
+  title: "0byte - SSL for AI Generated Content.",
   description:
-    "0byte is the cryptographic infrastructure layer for AI-generated content. It embeds zero-knowledge proofs into media at creation, making content verifiable, tamper-evident, and anchored on-chain for public auditability.",
+    "0byte is the cryptographic infrastructure layer for AI-generated content—embedding zero-knowledge fingerprints so every file is instantly verifiable and tamper-evident.",
   openGraph: {
     type: "website",
     url: "https://0byte.tech",
     siteName: "0byte",
     images: [
       {
-        url: "https://github.com/user-attachments/assets/b75d322f-f57a-49a2-872f-cb15ae22e373",
+        url: "/assets/0byte-og.png",
       },
     ],
   }

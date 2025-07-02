@@ -145,7 +145,7 @@ const VerifyClient = () => {
                     <div className='relative flex max-w-lg mx-auto flex-col items-center my-10'>
                         <Image
                             src={URL.createObjectURL(file)}
-                            alt='Uploaded'
+                            alt={`Uploaded image: ${fileName}`}
                             width={400}
                             height={300}
                             className='rounded-xl mb-4 w-auto h-auto'

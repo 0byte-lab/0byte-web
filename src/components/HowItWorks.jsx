@@ -22,7 +22,7 @@ const HowItWorks = () => {
                 <iframe
                     src="https://www.tella.tv/video/cmb5c0mh800060bl58v02a4hi/embed?b=0&title=0&a=1&loop=0&t=0&muted=0&wt=0"
                     className="absolute top-0 left-0 w-full h-full border-0 bg-transparent"
-                    allowTransparency="true"
+                    allowtransparency="true"
                     allowFullScreen
                 ></iframe>
             </div>
