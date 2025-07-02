@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "0byte",
     images: [
       {
-        url: "/assets/0byte-og.png",
+        url: "https://0byte.tech/assets/0byte-og.png",
       },
     ],
   }
