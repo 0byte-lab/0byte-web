@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "0byte - SSL for AI Generated Content.",
+  title: "0byte - Cryptographic Trust for AI Media.",
   description:
     "0byte is the cryptographic infrastructure layer for AI-generated content—embedding zero-knowledge fingerprints so every file is instantly verifiable and tamper-evident.",
   openGraph: {
@@ -28,7 +28,14 @@ export const metadata = {
         url: "https://0byte.tech/assets/0byte-og.png",
       },
     ],
-  }
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "0byte - Cryptographic Trust for AI Media.",
+    description:
+      "0byte is the cryptographic infrastructure layer for AI-generated content—embedding zero-knowledge fingerprints so every file is instantly verifiable and tamper-evident.",
+    images: ["https://0byte.tech/assets/0byte-og.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
