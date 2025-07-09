@@ -35,8 +35,8 @@ const Header = () => {
                     }
                 </div>
                 <div className='flex'>
-                    <Link href={"https://generator.0byte.tech/"}>
-                        <Button className={"cursor-pointer"} variant={""} size={"lg"}>Try Demo <ArrowUpRight /></Button>
+                    <Link href={"https://forms.gle/Fgr63BHavtRRcLf68"}>
+                        <Button className={"cursor-pointer"} variant={""} size={"lg"}>Join the Waitlist <ArrowUpRight /></Button>
                     </Link>
                 </div>
             </div>
