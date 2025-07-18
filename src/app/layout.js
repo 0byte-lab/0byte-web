@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <OpenPanelComponent
-          clientId="c1978b80-adf0-48d3-8440-1aa91edb4701"
+          clientId={process.env.OPENPANEL_CLIENT_ID}
           trackScreenViews={true}
           trackAttributes={true}
           trackOutgoingLinks={true}
